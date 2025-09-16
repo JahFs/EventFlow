@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventFlow</title>
+    <style>
+      body {
+        background-color: rgb(0, 117, 153);
+        font-family: Arial, sans-serif;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      #mainApp {
+        display: none;
+      }
+
+      input,
+      button,
+      textarea {
+        margin: 5px;
+        padding: 8px;
+      }
+
+      section {
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Landing / Signup Page -->
+    <section id="landingPage">
+      <h1>Welcome to Club Organizer</h1>
+      <h3>Create an account to get started!</h3>
+      <input type="text" id="userName" placeholder="Your Name" />
+      <input type="email" id="userEmail" placeholder="Email" />
+      <button id="fakeSignupBtn" type="button">Continue / Fake Signup</button>
+    </section>
+
+    <!-- Main App -->
+    <main id="mainApp">
+      <header>
+        <h1>Club Organizer</h1>
+      </header>
+
+      <section id="userProfile">
+        <div id="displayName"></div>
+      </section>
+
+      <section id="clubSection">
+        <h2>Create or Join a Club!</h2>
+        <input type="text" id="clubName" placeholder="Club Name" />
+        <button id="createClubBtn" type="button">Create</button>
+        <br/>
+        <input type="text" id="inviteCode" placeholder="Invite Code" />
+        <button id="joinClubBtn" type="button">Join Club</button>
+      </section>
+
+      <header>
+        <h1>Event Organizer</h1>
+      </header>
+
+      <section id="eventSection">
+        <h2>Events</h2>
+        <input type="text" id="eventTitle" placeholder="Event Title" />
+        <input type="datetime-local" id="eventDate" />
+        <textarea id="eventDesc" placeholder="Event Description"></textarea>
+        <button id="createEventBtn" type="button">Create Event</button>
+
+        <div id="eventList">
+          <!-- Events -->
+        </div>
+      </section>
+    </main>
+
+    <footer>Jahziahs Startup!!!</footer>
+    <script src="app.js"></script>
+  </body>
+</html>
